@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+:root {
+  --primary: #4D44B5;
+  --secondary: #FB7D5B;
+  --primary-hover: #3d3690;
+  --primary-dark: #1e1a46;
+  --title: #303972; 
+}
+
+.container__login {
+    background: #fff9f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login__form-login {
+    border-radius: 1rem;
+    background: white;
+    border: 0.1rem solid #ddd;
+    box-shadow: 0px 0px 10px 2px #ddd;
+    width: 400px;
+    padding: 2rem;
+}
+
+.form-login__header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.form-login__logo {
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem 0;
+    border-radius: 1rem;
+}
+
+.form-login__title {
+    color: var(--title);
+    text-align: center;
+    font-size: large;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.form-login__user {
+    width: 100%;
+}
+
+.user__login {
+    color: white;
+    background: var(--primary-dark);
+    border-style: none;
+    box-shadow: 0 0 1px 0px white inset;
+    cursor: pointer;
+    width: 25%;
+    height: 2rem;
+    transition: 0.3s ease;
+}
+
+button.user__login:hover {
+    background: var(--primary-hover);
+    transition: 0.3s ease;
+}
+
+button.user__login:focus {
+    background: var(--primary-hover);
+}
+
+.form-login__login-box {
+    border-radius: 0 0 1rem 1rem;
+    width: 100%;
+    margin: 0;
+}
+
+.form-login__login-box>.login-box__group {
+    margin: 1rem 0rem;
+}
+
+.login-box__group {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+label.group__label {
+    font-size: small;
+    display: none;
+    width: 100%;
+    margin: 0.3rem 0;
+}
+
+.group__input {
+    border: 0.1rem solid #ccc;
+    border-radius: 0.3rem;
+    outline: none;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0 0.5rem;
+    transition: 0.3s ease;
+}
+
+.group__input:focus {
+    border: 0.1rem solid var(--primary-hover);
+    transition: 0.3s ease;
+}
+
+.group__button {
+    color: white;
+    display: block;
+    border-style: none;
+    border-radius: 0.3rem;
+    background: var(--primary-dark);
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.group__button:hover{
+    background: var(--primary-hover);
+    transition: 0.3s ease;
+}
