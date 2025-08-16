@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>gsc</title>
+        <link rel="stylesheet" href="../assets/css/ui.css" />
+        <script src="../assets/js/main.js" type="module" defer></script>
+    </head>
+    <body>
+        <div class="main-panel">
+            <div class="form-container">
+
+                <div class="form__header">
+                    <h1 class="form__title">Créer un utilisateur</h1>
+                </div>
+
+                <form action="" class="form__body">
+
+                    <div class="form__group">
+                        <label for="text" class="group__label">Nom : </label>
+                        <input type="lastname" name="lastname" placeholder="Nom"  class="group__input" required />
+                    </div>
+
+                    <div class="form__group">
+                        <label for="text" class="group__label">Prénom : </label>
+                        <input type="firstname" name="firstname" placeholder="Prénom"  class="group__input" required />
+                    </div>
+
+                    <div class="form__group">
+                        <label for="tel" class="group__label">Téléphone : </label>
+                        <input type="phone" name="phone" placeholder="Téléphone"  class="group__input" required />
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email" class="group__label">Email : </label>
+                        <input type="email" name="email" placeholder="Adresse email"  class="group__input" required />
+                    </div>
+
+                    <div class="form__group">
+                        <label for="role" class="group__label">Rôle : </label>
+                        <select name="role" id="role" class="group__input">
+                            <option value="Sélectionner le rôle" disabled selected>Sélectionner le rôle</option>
+                            <option value="Super admin">Super admin</option>
+                            <option value="Personnel">Personnel</option>
+                            <option value="Enseignant">Enseignant</option>
+                            <option value="Élève">Élève</option>
+                        </select>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="centre" class="group__label">Centre : </label>
+                        <select name="centre" id="centre" class="group__input">
+                            <option value="Sélectionner le centre" disabled selected>Sélectionner le centre</option>
+                            <option value="Agbokou">Agbokou</option>
+                            <option value="Adjarra">Adjarra</option>
+                            <option value="Donoukin">Donoukin</option>
+                            <option value="Djègan">Djègan</option>
+                        </select>
+                    </div>
+
+                    <div class="form__group">
+                        <button type="submit" name="signup" class="group__button">Création</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </body>
+</html>

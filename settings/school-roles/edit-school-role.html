@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>gsc</title>
+        <link rel="stylesheet" href="../../assets/css/style.css" />
+        <script src="../../assets/js/main.js" type="module" defer></script>
+    </head>
+    <body>
+		<div class="wks" id="wks-box">
+			<div class="header-wks" id="header-wks-box">
+				<ul class="header-wks__menu--left menu-left" id="menu-left">
+					<li
+						class="menu-left__menu-left-item menu-left-item"
+						id="user-item"
+					>
+						MB
+					</li>
+					<li class="menu-left__menu-left-item menu-left-item user-dropdown-parent" id="user-email">
+						utilisateur@gmail.com
+					</li>
+				</ul>
+				
+				<ul class="user-dropdown-menu" id="user-dropdown-menu">
+					<li class="user-dropdown-item">Nom et Prénom</li>
+					<li class="user-dropdown-item">Rôle</li>
+					<a href="/gsc/modules/profil.html" class="user-dropdown-item-link">Profil</a>
+				</ul>
+
+                <ul class="header-wks__menu--center menu-center">
+					<li class="menu-center__menu-center-item menu-center-item">
+						Bienvenu dans GSC - Accès Facile à l'Éducation
+					</li>
+				</ul>
+
+				<ul class="header-wks__menu--right menu-right">
+					<li class="menu-right__menu-right-item menu-right-item">
+						Paramètres
+						<ul class="submenu">
+							<li class="submenu-item">
+								<span class="submenu-text">Années</span>
+								<nav class="subitem-menu">
+									<a href="../school-years/add-school-year.html" class="subitem-item">Ajouter une année</a>
+									<a href="../school-years/list-school-year.html" class="subitem-item">Listes des années</a>
+								</nav>
+							</li>
+							<li class="submenu-item">
+								<span class="submenu-text">Centres</span>
+								<nav class="subitem-menu">
+									<a href="../school-centers/add-school-center.html" class="subitem-item">Ajouter un centre</a>
+									<a href="../school-centers/list-school-center.html" class="subitem-item">Liste des centres</a>
+								</nav>
+							</li>
+							<li class="submenu-item">
+								<span class="submenu-text">Cycles</span>
+								<nav class="subitem-menu">
+									<a href="../school-cycles/add-school-cycle.html" class="subitem-item">Ajouter un cycle</a>
+									<a href="../school-cycles/list-school-cycle.html" class="subitem-item">Liste des cycles</a>
+								</nav>
+							</li>
+							<li class="submenu-item">
+								<span class="submenu-text">Classes</span>
+								<nav class="subitem-menu">
+									<a href="../school-grades/add-school-grade.html" class="subitem-item">Ajouter une classe</a>
+									<a href="../school-grades/list-school-grade.html" class="subitem-item">Liste des classes</a>
+								</nav>
+							</li>
+							<li class="submenu-item">
+								<span class="submenu-text">Séries</span>
+								<nav class="subitem-menu">
+									<a href="../school-series/add-school-serie.html" class="subitem-item">Ajouter une série</a>
+									<a href="../school-series/list-school-serie.html" class="subitem-item">Liste des séries</a>
+								</nav>
+							</li>
+							<li class="submenu-item">
+								<span class="submenu-text">Matières</span>
+								<nav class="subitem-menu">
+									<a href="../school-courses/add-school-course.html" class="subitem-item">Ajouter une matière</a>
+									<a href="../school-courses/list-school-course.html" class="subitem-item">Liste des matières</a>
+								</nav>
+							</li>
+							<li class="submenu-item">
+								<span class="submenu-text">Rôles</span>
+								<nav class="subitem-menu">
+									<a href="add-school-role.html" class="subitem-item">Ajouter un rôle</a>
+									<a href="list-school-role.html" class="subitem-item">Liste des rôles</a>
+								</nav>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-right__menu-right-item menu-right-item" id="logout">
+						Déconnexion
+					</li>
+				</ul>
+			</div>
+
+			<div class="main-panel">
+				<div class="form-container">
+
+					<div class="form__header">
+						<h1 class="form__title">Modifier un rôle</h1>
+					</div>
+
+					<form action="" class="form__body">
+
+						<div class="form__group">
+                            <label for="school-role" class="group__label">Rôle : </label>
+                            <input type="text" name="school-role" placeholder="Rôle"  class="group__input" required />
+                        </div>
+
+						<div class="form__group">
+							<button type="submit" name="signup" class="group__button">Édition</button>
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+			
+			<div class="sidebar" id="sidebar"></div>
+
+			<div class="gsc-footer" id="dashboard-footer">
+				<p class="text-footer">GSC-APP ayila.bour@gmail.com 2025</p>
+			</div>
+		</div>
+	</body>
+</html>

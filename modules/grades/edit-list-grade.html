@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>gsc</title>
+        <link rel="stylesheet" href="../../assets/css/style.css" />
+        <script src="../../assets/js/main.js" type="module" defer></script>
+    </head>
+    <body>
+		<div class="wks" id="wks-box">
+			<div class="header-wks" id="header-wks-box">
+				<ul class="header-wks__menu--left menu-left" id="menu-left">
+					<li
+						class="menu-left__menu-left-item menu-left-item"
+						id="user-item"
+					>
+						MB
+					</li>
+					<li class="menu-left__menu-left-item menu-left-item user-dropdown-parent" id="user-email">
+						utilisateur@gmail.com
+					</li>
+				</ul>
+				
+				<ul class="user-dropdown-menu" id="user-dropdown-menu">
+					<li class="user-dropdown-item">Nom et Prénom</li>
+					<li class="user-dropdown-item">Rôle</li>
+					<a href="/gsc/modules/profil.html" class="user-dropdown-item-link">Profil</a>
+				</ul>
+
+                <ul class="header-wks__menu--center menu-center">
+					<li class="menu-center__menu-center-item menu-center-item">
+						Bienvenu dans GSC - Accès Facile à l'Éducation
+					</li>
+				</ul>
+
+				<ul class="header-wks__menu--right menu-right">
+					<li class="menu-right__menu-right-item menu-right-item">
+						Paramètres
+                        <ul class="submenu">
+							<li class="submenu-item">
+								<span class="submenu-text">Années</span>
+								<nav class="subitem-menu">
+									<a href="../../settings/school-years/add-school-year.html" class="subitem-item">Ajouter une année</a>
+									<a href="../../settings/school-years/list-school-year.html" class="subitem-item">Listes des années</a>
+								</nav>
+							</li>
+							<li class="submenu-item">
+								<span class="submenu-text">Centres</span>
+								<nav class="subitem-menu">
+									<a href="../../settings/school-centers/add-school-center.html" class="subitem-item">Ajouter un centre</a>
+									<a href="../../settings/school-centers/list-school-center.html" class="subitem-item">Liste des centres</a>
+								</nav>
+							</li>
+							<li class="submenu-item">
+								<span class="submenu-text">Cycles</span>
+								<nav class="subitem-menu">
+									<a href="../../settings/school-cycles/add-school-cycle.html" class="subitem-item">Ajouter un cycle</a>
+									<a href="../../settings/school-cycles/list-school-cycle.html" class="subitem-item">Liste des cycles</a>
+								</nav>
+							</li>
+							<li class="submenu-item">
+								<span class="submenu-text">Classes</span>
+								<nav class="subitem-menu">
+									<a href="../../settings/school-grades/add-school-grade.html" class="subitem-item">Ajouter une classe</a>
+									<a href="../../settings/school-grades/list-school-grade.html" class="subitem-item">Liste des classes</a>
+								</nav>
+							</li>
+							<li class="submenu-item">
+								<span class="submenu-text">Séries</span>
+								<nav class="subitem-menu">
+									<a href="../../settings/school-series/add-school-serie.html" class="subitem-item">Ajouter une série</a>
+									<a href="../../settings/school-series/list-school-serie.html" class="subitem-item">Liste des séries</a>
+								</nav>
+							</li>
+							<li class="submenu-item">
+								<span class="submenu-text">Matières</span>
+								<nav class="subitem-menu">
+									<a href="../../settings/school-courses/add-school-course.html" class="subitem-item">Ajouter une matière</a>
+									<a href="../../settings/school-courses/list-school-course.html" class="subitem-item">Liste des matières</a>
+								</nav>
+							</li>
+							<li class="submenu-item">
+								<span class="submenu-text">Rôles</span>
+								<nav class="subitem-menu">
+									<a href="../../settings/school-roles/add-school-role.html" class="subitem-item">Ajouter un rôle</a>
+									<a href="../../settings/school-roles/list-school-role.html" class="subitem-item">Liste des rôles</a>
+								</nav>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-right__menu-right-item menu-right-item" id="logout">
+						Déconnexion
+					</li>
+				</ul>
+			</div>
+
+            <div class="main-panel">
+                <h2 class="list__title">Éditer & consulter les notes</h2>
+
+                <div class="form-filter-container">
+
+					<form action="" class="form__body">
+
+						<div class="form__group">
+							<label for="classe" class="group__label">Classe : </label>
+							<select name="classe" id="classe" class="group__input">
+								<option value="Classe" disabled selected>Classe</option>
+								<option value="6ème">6ème</option>
+								<option value="5ème">5ème</option>
+								<option value="4ème">4ème</option>
+								<option value="3ème">3ème</option>
+							</select>
+						</div>
+                        
+                        <div class="form__group">
+							<label for="serie" class="group__label">Série : </label>
+							<select name="serie" id="serie" class="group__input">
+								<option value="Série" disabled selected>Série</option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+							</select>
+						</div>
+
+                        <div class="form__group">
+							<label for="matricule" class="group__label">Numéro matricule : </label>
+							<input type="matricule" name="matricule" placeholder="Matricule"  class="group__input" required />
+						</div>
+
+                        <div class="form__group">
+                            <label for="lastname" class="group__label">Nom : </label>
+                            <input type="text" name="lastname" placeholder="Nom"  class="group__input lastname" required />
+                        </div>
+
+                        <div class="form__group">
+                            <label for="firstname" class="group__label">Prénom : </label>
+                            <input type="text" name="firstname" placeholder="Prénom"  class="group__input firstname" required />
+                        </div>
+					</form>
+
+				</div>
+
+                <form class="list-container">
+                    <table class="list">
+                        <thead class="list__header">
+                            <tr class="list__row">
+                                <th class="list__row-item">N°</th>
+                                <th class="list__row-item">Matricule</th>
+                                <th class="list__row-item">Nom</th>
+                                <th class="list__row-item">Prénom(s)</th>
+                                <th class="list__row-item">Classe</th>
+                                <th class="list__row-item">Série</th>
+                                <th class="list__row-item">Matière</th>
+                                <th class="list__row-item">I1</th>
+                                <th class="list__row-item">I2</th>
+                                <th class="list__row-item">I3</th>
+                                <th class="list__row-item">MI</th>
+                                <th class="list__row-item">D1</th>
+                                <th class="list__row-item">D2</th>
+                                <th class="list__row-item">MG</th>
+                                <th class="list__row-item">MC</th>
+                                <th class="list__row-item" colspan="2">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="list__body">
+                            <tr class="list__row">
+                                <td class="list__row-item">1</td>
+                                <td class="list__row-item">EDCGSC0001</td>
+                                <td class="list__row-item">BOURAIMA</td>
+                                <td class="list__row-item">Mouksite</td>
+                                <td class="list__row-item">2nde</td>
+                                <td class="list__row-item">D</td>
+                                <td class="list__row-item">Maths</td>
+                                <td class="list__row-item">10</td>
+                                <td class="list__row-item">12.5</td>
+                                <td class="list__row-item">08</td>
+                                <td class="list__row-item">10.33</td>
+                                <td class="list__row-item">10</td>
+                                <td class="list__row-item">10</td>
+                                <td class="list__row-item">10.11</td>
+                                <td class="list__row-item">30.33</td>
+                                <td class="list__row-item">
+									<button type="button" class="edit-grade">Éditer</button>
+								</td>
+                            </tr>
+                            <tr class="list__row">
+                                <td class="list__row-item">2</td>
+                                <td class="list__row-item">EDCGSC0002</td>
+                                <td class="list__row-item">AKIOLE</td>
+                                <td class="list__row-item">Chancelle</td>
+                                <td class="list__row-item">2nde</td>
+                                <td class="list__row-item">D</td>
+                                <td class="list__row-item">Maths</td>
+                                <td class="list__row-item">10</td>
+                                <td class="list__row-item">12.5</td>
+                                <td class="list__row-item">08</td>
+                                <td class="list__row-item">10.33</td>
+                                <td class="list__row-item">10</td>
+                                <td class="list__row-item">10</td>
+                                <td class="list__row-item">10.11</td>
+                                <td class="list__row-item">30.33</td>
+                                <td class="list__row-item">
+									<button type="button" class="edit-grade">Éditer</button>
+								</td>
+                            </tr>
+                            <tr class="list__row">
+                                <td class="list__row-item">3</td>
+                                <td class="list__row-item">EDCGSC0003</td>
+                                <td class="list__row-item">DOSSOU</td>
+                                <td class="list__row-item">Rolande</td>
+                               	<td class="list__row-item">2nde</td>
+								<td class="list__row-item">D</td>
+								<td class="list__row-item">Maths</td>
+								<td class="list__row-item">10</td>
+								<td class="list__row-item">12.5</td>
+								<td class="list__row-item">08</td>
+								<td class="list__row-item">10.33</td>
+								<td class="list__row-item">10</td>
+								<td class="list__row-item">10</td>
+								<td class="list__row-item">10.11</td>
+								<td class="list__row-item">30.33</td>
+								<td class="list__row-item">
+									<button type="button" class="edit-grade">Éditer</button>
+								</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="list__footer">
+                            <tr class="list__row">
+                                <th class="list__row-item">Total</th>
+                                <th class="list__row-item" colspan="16">3 notes enregistrés</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </form>
+            </div>
+
+            <div class="sidebar" id="sidebar"></div>
+
+			<div class="gsc-footer" id="dashboard-footer">
+				<p class="text-footer">GSC-APP ayila.bour@gmail.com 2025</p>
+			</div>
+            
+		</div>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+# Classe Role (gérer permissions)
